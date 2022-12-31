@@ -1,9 +1,10 @@
 Metadata-Version: 2.1
 Name: pythonfofa
-Version: 1.0.0
+Version: 1.0.1
 Summary: FOFA.info Python SDK
 Home-page: https://github.com/Moxin1044/pyfofa
 Author: Moxin
 Author-email: 1044631097@qq.com
 License: MIT License
+License-File: LICENSE
 License-File: LICENSE.txt

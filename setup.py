@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='pythonfofa',
-    version='1.0.0',
+    version='1.0.1',
     packages=['pythonfofa'],
     url='https://github.com/Moxin1044/pyfofa',
     license='MIT License',
