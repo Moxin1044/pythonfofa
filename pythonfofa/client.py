@@ -18,7 +18,7 @@ class Client:
     def get_userinfo(self):
         # Check Email and key
         url = f"{self.url}/info/my?email={self.email}&key={self.key}"
-        response = pyfofa.operation.send_get_json(url, self.proxy)
+        response = pythonfofa.operation.send_get_json(url, self.proxy)
         if response['error']:
             return response['errmsg']
         else:
@@ -33,7 +33,7 @@ class Client:
     def userinfo(self):
         # Check Email and key
         url = f"{self.url}/info/my?email={self.email_check}&key={self.key}"
-        response = pyfofa.operation.send_get_json(url, self.proxy)
+        response = pythonfofa.operation.send_get_json(url, self.proxy)
         if response['error']:
             return response['errmsg']
         else:
@@ -43,9 +43,9 @@ class Client:
         if field is None:
             field = ['ip', 'host', 'port']
         fields = ','.join(field)
-        query = pyfofa.operation.get_base64_url(query_text)
+        query = pythonfofa.operation.get_base64_url(query_text)
         url = f"{self.url}/search/all?email={self.email_check}&key={self.key}&qbase64={query}&fields={fields}&page={page}&size={size}&full={full}"
-        response = pyfofa.operation.send_get_json(url, self.proxy)
+        response = pythonfofa.operation.send_get_json(url, self.proxy)
         '''
         # 考虑到生产环境，所以不可以在这里直接返回errmsg，统一返回response即可。
         # 下同
@@ -60,12 +60,12 @@ class Client:
         if field is None:
             field = ['title']
         fields = ','.join(field)
-        query = pyfofa.operation.get_base64_url(query_text)
+        query = pythonfofa.operation.get_base64_url(query_text)
         url = f"{self.url}/search/stats?fields={fields}&qbase64={query}&email={self.email_check}&key={self.key}"
-        response = pyfofa.operation.send_get_json(url, self.proxy)
+        response = pythonfofa.operation.send_get_json(url, self.proxy)
         return response
 
     def search_host(self, host, detail=False):
         url = f"{self.url}/host/{host}?detail={detail}&email={self.email_check}&key={self.key}"
-        response = pyfofa.operation.send_get_json(url, self.proxy)
+        response = pythonfofa.operation.send_get_json(url, self.proxy)
         return response

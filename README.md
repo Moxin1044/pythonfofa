@@ -40,7 +40,7 @@ print(handle.userinfo())
 ```python
 import pythonfofa
 
-handle = pyfofa.Client()
+handle = pythonfofa.Client('email','key')
 print(handle.check_fofa_config())
 ```
 
@@ -60,7 +60,7 @@ print(handle.check_fofa_config())
 import pythonfofa
 
 
-handle = pythonfofa.Client()
+handle = pythonfofa.Client('email','key')
 print(handle.userinfo())
 ```
 
@@ -94,7 +94,7 @@ print(handle.userinfo())
 import pythonfofa
 
 
-handle = pythonfofa.Client()
+handle = pythonfofa.Client('email','key')
 print(handle.search('title="bing"'))
 ```
 
@@ -188,7 +188,7 @@ handle.search('domain="qq.com"',field=field,size=10)
 import pythonfofa
 
 
-handle = pythonfofa.Client()
+handle = pythonfofa.Client('email','key')
 print(handle.search_stats('ip="103.35.168.38"'))
 ```
 
@@ -242,7 +242,7 @@ handle.search(query_text, field)
 import pythonfofa
 
 
-handle = pythonfofa.Client()
+handle = pythonfofa.Client('email','key')
 print(handle.search_host('78.48.50.249'))
 ```
 
@@ -321,7 +321,7 @@ handle.search_host(host, detail=False)
 ```python
 import pythonfofa
 
-handle = pythonfofa.Client()
+handle = pythonfofa.Client('email','key')
 print(handle.username)
 ```
 
@@ -340,7 +340,7 @@ Moxin
 ```python
 import pythonfofa
 
-handle = pythonfofa.Client()
+handle = pythonfofa.Client('email','key')
 print(handle.fcoin)
 ```
 
@@ -359,7 +359,7 @@ print(handle.fcoin)
 ```python
 import pythonfofa
 
-handle = pythonfofa.Client()
+handle = pythonfofa.Client('email','key')
 print(handle.isvip)
 ```
 
@@ -378,7 +378,7 @@ true
 ```python
 import pythonfofa
 
-handle = pythonfofa.Client()
+handle = pythonfofa.Client('email','key')
 print(handle.viplevel)
 ```
 
@@ -397,7 +397,7 @@ print(handle.viplevel)
 ```python
 import pythonfofa
 
-handle = pythonfofa.Client()
+handle = pythonfofa.Client('email','key')
 print(handle.avatar)
 ```
 
