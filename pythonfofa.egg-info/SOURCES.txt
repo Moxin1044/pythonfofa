@@ -1,0 +1,10 @@
+LICENSE.txt
+setup.cfg
+setup.py
+pythonfofa/__init__.py
+pythonfofa/client.py
+pythonfofa/operation.py
+pythonfofa.egg-info/PKG-INFO
+pythonfofa.egg-info/SOURCES.txt
+pythonfofa.egg-info/dependency_links.txt
+pythonfofa.egg-info/top_level.txt
