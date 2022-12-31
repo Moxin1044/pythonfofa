@@ -6,9 +6,6 @@ class Client:
     def __init__(self, email, key, proxy=""):
         self.username = None
         self.email_check = None
-        # load config.json
-        with open('../config.json', 'r') as f:
-            config = json.load(f)
         self.email = email
         self.key = key
         self.url = 'https://fofa.info/api/v1'
