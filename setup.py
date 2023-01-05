@@ -6,7 +6,8 @@ with io.open('README.md', encoding='utf-8') as f:
 
 setup(
     name='pythonfofa',
-    version='1.0.7',
+    version='1.0.8',
+    install_requires=['requests'],
     packages=['pythonfofa'],
     url='https://github.com/Moxin1044/pythonfofa',
     license='MIT License',

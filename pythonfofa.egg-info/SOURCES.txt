@@ -9,4 +9,5 @@ pythonfofa/operation.py
 pythonfofa.egg-info/PKG-INFO
 pythonfofa.egg-info/SOURCES.txt
 pythonfofa.egg-info/dependency_links.txt
+pythonfofa.egg-info/requires.txt
 pythonfofa.egg-info/top_level.txt
